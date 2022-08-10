@@ -1,0 +1,31 @@
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 64px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

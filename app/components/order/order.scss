@@ -1,0 +1,14 @@
+.order {
+
+  &__bg {
+    background-color: black;
+  }
+  &__header {
+    padding: 105px 0 0;
+    &-title {
+      font-size: 4rem;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}

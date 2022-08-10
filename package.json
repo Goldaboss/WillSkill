@@ -1,0 +1,33 @@
+{
+  "name": "WillSkill",
+  "version": "1.0.0",
+  "description": "WillSkill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goldaboss/WillSkill.git"
+  },
+  "author": "Goldaboss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goldaboss/WillSkill/issues"
+  },
+  "homepage": "https://github.com/Goldaboss/WillSkill#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
