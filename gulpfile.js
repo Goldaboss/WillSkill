@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 
 
 gulp.task('styles', function() { // Создаем таск "sass"
-    return gulp.src('app/styles/style.scss') // Берем источник
+    return gulp.src('app/css/style.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('docs/css')) // Выгружаем результата в папку docs/css
@@ -23,7 +23,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('app/**.js')
+    return gulp.src('app/js/**.js')
         .pipe(babel({presets: ['@babel/env']}))
         .pipe(gulp.dest('docs/js')) // Выгружаем результата в папку docs/js
         .pipe(browserSync.reload({ stream: true }))
