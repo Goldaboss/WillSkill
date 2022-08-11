@@ -1,6 +1,7 @@
 @import "../normalize";
-@import "main";
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "fonts";
+@import "main";
 @import "../components/header/header";
 @import "../components/info/info";
 @import "../components/order/order";

@@ -5,12 +5,10 @@
   &__bg {
     background: black;
     min-height: 90px;
-    padding-top: 18px;
   }
 
   &__logo {
     width: 128px;
-    margin-right: 100px;
   }
 
   &__menu {
@@ -18,12 +16,13 @@
     &-link {
       font-size: 1.5rem;
       color: white;
+      padding: 0 20px;
     }
   }
 
   &__basket {
     background: black;
-    margin: 0 14px 13px 80px;
+    margin: 0 14px 13px 0;
     border: none;
     outline: none;
   }
