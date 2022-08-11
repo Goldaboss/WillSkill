@@ -1,13 +1,13 @@
 .info {
 
   &__bg {
-    background: #FCDA28;
+    background:$color2;
   }
 
   &__main {
     z-index: 1;
 
-    &__top {
+    &-top {
       padding: 80px 0 100px;
 
       &-title {
@@ -15,15 +15,20 @@
         line-height: 152px;
         padding-bottom: 30px;
       }
+
+      &-text {
+        max-width: 50%;
+      }
     }
 
-    &__bottom {
+    &-bottom {
       padding: 0 0 85px;
       &-title {
         font-size: 3rem;
         font-weight: 700;
       }
       &-text {
+        max-width: 26%;
         font-size: 1.5rem;
         line-height: 21px;
       }
