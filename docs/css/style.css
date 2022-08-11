@@ -10036,21 +10036,22 @@ a:hover {
 .info__bg {
   background: #FCDA28; }
 
-.info__main__top {
-  padding: 80px 0 100px; }
-  .info__main__top-title {
-    font-size: 12rem;
-    line-height: 152px;
-    padding-bottom: 30px; }
-
-.info__main__bottom {
-  padding: 0 0 85px; }
-  .info__main__bottom-title {
-    font-size: 3rem;
-    font-weight: 700; }
-  .info__main__bottom-text {
-    font-size: 1.5rem;
-    line-height: 21px; }
+.info__main {
+  z-index: 1; }
+  .info__main__top {
+    padding: 80px 0 100px; }
+    .info__main__top-title {
+      font-size: 12rem;
+      line-height: 152px;
+      padding-bottom: 30px; }
+  .info__main__bottom {
+    padding: 0 0 85px; }
+    .info__main__bottom-title {
+      font-size: 3rem;
+      font-weight: 700; }
+    .info__main__bottom-text {
+      font-size: 1.5rem;
+      line-height: 21px; }
 
 .info__img {
   position: absolute;
