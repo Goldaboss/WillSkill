@@ -1,22 +1,40 @@
 .order {
 
   &__bg {
-    background-color: black;
+    background-color: $color4;
   }
-  &__header {
-    padding: 105px 0 60px;
-    &-title {
-      font-size: 4rem;
-      font-weight: bold;
-      color: $color1;
 
-      &-color {
-        color: $color2;
-      }
+  &__header {
+
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: $color1;
+    padding: 105px 0 60px;
+
+    &--color {
+      color: $color2;
     }
   }
 
+  &__btn {
+    width: 256px;
+    font-size: 1.5rem;
+    padding: 14px 32px;
+    border-radius: 10px;
+    margin: 65px 0 110px;
+  }
+}
+
+.order-product {
+
   &__price {
+    padding: 0 0 30px;
+  }
+
+  &__price-count {
     font-size: 4rem;
     color: $color1;
     padding: 0 16px;
@@ -28,45 +46,37 @@
     }
   }
 
+  &__img {
+    padding: 0 0 80px;
+
+    &--lg {
+      padding: 0 0 48px;
+    }
+  }
+
   &__adv {
 
-    &-img {
-      padding: 0 0 80px;
+  }
 
-      &-center {
-        padding: 0 0 38px;
-      }
+  &__text {
+    font-size: 1.5rem;
+    color: $color1;
+    margin: 0;
+    line-height: 21px;
+
+    &--colored {
+      color: $color2;
     }
 
-    &-text {
-      font-size: 1.5rem;
-      color: $color1;
-      margin: 0;
-      line-height: 24px;
-      &-color {
-        color: $color2;
-      }
+    &--lg {
+      font-size: 3rem;
+      line-height: 43px;
+      padding-bottom: 8px;
     }
 
-    &-btn {
-      width: 256px;
-      font-size: 1.5rem;
-      padding: 14px 32px;
-      border-radius: 10px;
-      margin: 60px 0 112px;
-    }
-
-    &__center {
-      &-text {
-        font-size: 3rem;
-        color: $color1;
-        margin: 0;
-
-        &-color {
-          font-size: 2rem;
-          color: $color2;
-        }
-      }
+    &--md {
+      font-size: 2rem;
+      line-height: 28px;
     }
   }
 }
