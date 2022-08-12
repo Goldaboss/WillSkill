@@ -10019,113 +10019,103 @@ a:hover {
   background: #FCDA28 url("../../img/header_bg.svg") 50% 100%;
   padding-bottom: 26px; }
   .header__bg {
-    background: black;
-    min-height: 90px; }
+    background: #111111;
+    min-height: 88px;
+    padding-top: 8px; }
   .header__logo {
-    width: 128px; }
+    margin: 8px 0 0; }
   .header__menu-link {
     font-size: 1.5rem;
-    color: white;
+    color: #FFFFFF;
     padding: 0 20px; }
   .header__basket {
-    background: black;
-    margin: 0 14px 13px 0;
+    background: #111111;
+    margin: 0 16px 0 0;
     border: none;
     outline: none; }
 
 .info__bg {
   background: #FCDA28; }
 
-.info__main {
+.info__description {
   z-index: 1; }
-  .info__main__top {
-    padding: 80px 0 100px; }
-    .info__main__top-title {
-      font-size: 12rem;
-      line-height: 152px;
-      padding-bottom: 30px; }
-  .info__main__bottom {
-    padding: 0 0 85px; }
-    .info__main__bottom-title {
-      font-size: 3rem;
-      font-weight: 700; }
-    .info__main__bottom-text {
-      font-size: 1.5rem;
-      line-height: 21px; }
+
+.info__description-title {
+  padding: 80px 0 100px; }
+
+.info__description-text {
+  padding: 0 0 85px; }
 
 .info__img {
   position: absolute;
   top: 36px;
   right: 60px; }
 
-.order__bg {
-  background-color: black; }
-
-.order__header {
-  padding: 105px 0 63px; }
-  .order__header-title {
-    font-size: 4rem;
-    font-weight: bold;
-    color: white; }
-    .order__header-title-color {
-      color: #FCB500; }
-
-.order__main {
-  padding: 0 60px 0; }
-  .order__main__left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 65px 0 190px; }
-    .order__main__left-text {
-      font-size: 1.5rem;
-      color: white;
-      margin: 0; }
-      .order__main__left-text-color {
-        color: #FCB500; }
-  .order__main__right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 70px 0 190px; }
-    .order__main__right-text {
-      font-size: 1.5rem;
-      color: white;
-      margin: 0; }
-      .order__main__right-text-color {
-        color: #FCB500; }
-  .order__main__center-price {
-    padding: 0 80px 30px 100px; }
-    .order__main__center-price-old {
-      font-size: 3rem;
-      color: #ADADAD; }
-    .order__main__center-price-new {
-      font-size: 4rem;
-      color: #FFFFFF; }
-  .order__main__center-img {
-    padding: 0 0 38px; }
-  .order__main__center-text {
+.info__title {
+  font-size: 12rem;
+  line-height: 152px;
+  padding-bottom: 30px; }
+  .info__title--colored {
+    color: #FFFFFF; }
+  .info__title--sm {
     font-size: 3rem;
-    color: white;
-    margin: 0; }
-    .order__main__center-text-color {
-      font-size: 2rem;
-      color: #FCB500; }
-  .order__main__center-btn {
-    width: 256px;
+    font-weight: 700;
+    line-height: 42px;
+    padding-bottom: 0; }
+
+.info__text {
+  max-width: 50%; }
+  .info__text--sm {
+    max-width: 26%;
     font-size: 1.5rem;
-    padding: 14px 32px;
-    border-radius: 10px;
-    margin: 60px 0 112px; }
+    line-height: 21px; }
+
+.order__bg {
+  background-color: #111111; }
+
+.order__title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 105px 0 60px; }
+  .order__title--color {
+    color: #FCDA28; }
+
+.order__btn {
+  width: 256px;
+  font-size: 1.5rem;
+  padding: 14px 32px;
+  border-radius: 10px;
+  margin: 65px 0 110px; }
+
+.order-product__price {
+  padding: 0 0 30px; }
+
+.order-product__price-count {
+  font-size: 4rem;
+  color: #FFFFFF;
+  padding: 0 16px; }
+  .order-product__price-count--old {
+    font-size: 3rem;
+    color: #ADADAD;
+    text-decoration: line-through; }
+
+.order-product__img {
+  padding: 0 0 80px; }
+  .order-product__img--lg {
+    padding: 0 0 48px; }
+
+.order-product__text {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 21px; }
+  .order-product__text--colored {
+    color: #FCDA28; }
+  .order-product__text--lg {
+    font-size: 3rem;
+    line-height: 43px;
+    padding-bottom: 8px; }
+  .order-product__text--md {
+    font-size: 2rem;
+    line-height: 28px; }
