@@ -29,3 +29,25 @@ button:active, button:focus {
 a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+}

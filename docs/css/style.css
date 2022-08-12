@@ -10015,24 +10015,58 @@ button:active, button:focus {
 a:hover {
   text-decoration: none; }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 10px; }
+  .container {
+    padding: 0 32px; } }
+
+@media (max-width: 992px) {
+  html {
+    font-size: 8px; } }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 6px; } }
+
 .header {
   background: #FCDA28 url("../../img/header_bg.svg") 50% 100%;
-  padding-bottom: 26px; }
+  padding-bottom: 2.16rem; }
   .header__bg {
     background: #111111;
-    min-height: 88px;
+    min-height: 7.33rem;
     padding-top: 8px; }
   .header__logo {
+    width: 10.6rem;
     margin: 8px 0 0; }
-  .header__menu-link {
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    padding: 0 20px; }
+  .header__menu {
+    min-width: 75%; }
+    .header__menu-link {
+      font-size: 1.5rem;
+      color: #FFFFFF; }
   .header__basket {
+    width: 3.66rem;
     background: #111111;
     margin: 0 16px 0 0;
     border: none;
     outline: none; }
+  .header__modal {
+    display: none;
+    list-style: none;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border: none; }
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none; }
+  .header__modal {
+    display: block; } }
 
 .info__bg {
   background: #FCDA28; }
@@ -10041,26 +10075,27 @@ a:hover {
   z-index: 1; }
 
 .info__description-title {
-  padding: 80px 0 100px; }
+  padding: 6.67rem 0 8.33rem; }
 
 .info__description-text {
-  padding: 0 0 85px; }
+  padding: 0 0 7.08rem; }
 
 .info__img {
+  width: 59.33rem;
   position: absolute;
-  top: 36px;
-  right: 60px; }
+  top: 3rem;
+  right: 5rem; }
 
 .info__title {
   font-size: 12rem;
-  line-height: 152px;
-  padding-bottom: 30px; }
+  line-height: 12.66rem;
+  padding-bottom: 2.5rem; }
   .info__title--colored {
     color: #FFFFFF; }
   .info__title--sm {
     font-size: 3rem;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 3.5rem;
     padding-bottom: 0; }
 
 .info__text {
@@ -10068,7 +10103,7 @@ a:hover {
   .info__text--sm {
     max-width: 26%;
     font-size: 1.5rem;
-    line-height: 21px; }
+    line-height: 1.75rem; }
 
 .order__bg {
   background-color: #111111; }
@@ -10077,7 +10112,7 @@ a:hover {
   font-size: 4rem;
   font-weight: bold;
   color: #FFFFFF;
-  padding: 105px 0 60px; }
+  padding: 8.75rem 0 5rem; }
   .order__title--color {
     color: #FCDA28; }
 

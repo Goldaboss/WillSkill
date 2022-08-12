@@ -1,27 +1,29 @@
 .header {
   background: $color2 url("../../img/header_bg.svg") 50% 100%;
-  padding-bottom: 26px;
+  padding-bottom: 2.16rem;
 
   &__bg {
     background: $color4;
-    min-height: 88px;
+    min-height: 7.33rem;
     padding-top: 8px;
   }
 
   &__logo {
+    width: 10.6rem;
     margin: 8px 0 0;
   }
 
   &__menu {
+    min-width: 75%;
 
     &-link {
       font-size: 1.5rem;
       color: $color1;
-      padding: 0 20px;
     }
   }
 
   &__basket {
+    width: 3.66rem;
     background: $color4;
     margin: 0 16px 0 0;
     border: none;
