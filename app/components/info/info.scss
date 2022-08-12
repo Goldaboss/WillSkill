@@ -1,7 +1,7 @@
 .info {
 
   &__bg {
-    background:$color2;
+    background: $color2;
   }
 
   &__description {
@@ -28,7 +28,7 @@
     line-height: 12.66rem;
     padding-bottom: 2.5rem;
 
-    &--colored{
+    &--colored {
       color: $color1;
     }
 
@@ -47,6 +47,15 @@
       max-width: 26%;
       font-size: 1.5rem;
       line-height: 1.75rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding-top: 9.5rem;
+    &__title {
+      font-size: 6rem;
     }
   }
 }

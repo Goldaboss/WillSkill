@@ -23,7 +23,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('app/js/**.js')
+    return gulp.src('app/**.js')
         .pipe(babel({presets: ['@babel/env']}))
         .pipe(gulp.dest('docs/js')) // Выгружаем результата в папку docs/js
         .pipe(browserSync.reload({ stream: true }))

@@ -15,11 +15,52 @@
 
   &__menu {
     min-width: 75%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
 
     &-link {
       font-size: 1.5rem;
       color: $color1;
     }
+
+    &-wrap {
+
+      &-btn {
+        display: none;
+      }
+    }
+
+    &-btn {
+
+      &-nav {
+        display: none;
+        list-style: none;
+        width: 2em;
+        height: 2em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        border: none;
+      }
+    }
+  }
+
+  &__modal {
+    display: none;
+    list-style: none;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border: none;
   }
 
   &__basket {
@@ -30,3 +71,92 @@
     outline: none;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    &__menu {
+      position: relative;
+      background: $color2;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 34px 24px 34px 0;
+
+      &-wrap {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        transition: 0.2s ease left;
+        z-index: 2;
+
+        &-btn {
+          display: block;
+          width: 100px;
+          flex-shrink: 0;
+          font-size: 3rem;
+          font-weight: normal;
+          background: transparent;
+          border: none;
+          padding: 36px 0;
+          position: relative;
+
+          &:after,
+          &:before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: $color2;
+            position: absolute;
+            transform: rotate(45deg);
+            left: 24px;
+            top: 36px;
+          }
+
+          &:before {
+            transform: rotate(135deg);
+          }
+        }
+
+        &-bg {
+          background: rgba(0, 0, 0, 0.9);
+        }
+
+        &-active {
+          left: 0;
+        }
+      }
+
+      &-btn {
+        &-nav {
+          display: block;
+        }
+      }
+
+      &-link {
+        color: $color4;
+        font-size: 3rem;
+        font-weight: bold;
+        display: block;
+        padding: 10px 0;
+        white-space: normal;
+        text-align: right;
+      }
+    }
+
+    &__modal {
+      display: block;
+    }
+  }
+}
+
+
