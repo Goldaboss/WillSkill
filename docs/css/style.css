@@ -10263,6 +10263,10 @@ a:hover {
   .order-product__img--lg {
     padding: 0 0 48px; }
 
+.order-product__adv {
+  -ms-flex-item-align: end;
+      align-self: end; }
+
 .order-product__text {
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -10277,3 +10281,21 @@ a:hover {
   .order-product__text--md {
     font-size: 2rem;
     line-height: 28px; }
+
+@media (max-width: 768px) {
+  .order__title {
+    padding: 8.75rem 0 4rem; }
+  .order__btn {
+    font-size: 2rem;
+    margin: 24px 0; }
+  .order-product__adv {
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .order-product__price {
+    padding: 0; }
+  .order-product__img {
+    padding: 0; }
+    .order-product__img--lg {
+      padding: 0; }
+  .order-product__text {
+    line-height: 12px; } }

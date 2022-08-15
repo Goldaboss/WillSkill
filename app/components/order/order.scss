@@ -55,7 +55,7 @@
   }
 
   &__adv {
-
+    align-self: end;
   }
 
   &__text {
@@ -80,3 +80,43 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .order {
+    &__title {
+      padding: 8.75rem 0 4rem;
+    }
+
+    &__btn {
+      font-size: 2rem;
+      margin: 24px 0;
+    }
+  }
+
+  .order-product {
+
+    &__adv {
+      align-self: center;
+    }
+
+    &__price {
+      padding: 0;
+    }
+
+    &__img {
+      padding: 0;
+
+      &--lg {
+        padding: 0;
+      }
+    }
+
+    &__text {
+      line-height: 12px;
+
+      &--lg {
+      }
+    }
+  }
+}
+
