@@ -10029,12 +10029,8 @@ a:hover {
   html {
     font-size: 6px; } }
 
-@media (max-width: 576px) {
-  html {
-    font-size: 4px; } }
-
 .header {
-  background: #FCDA28 url("/img/header_bg.svg") 50% 100%;
+  background: #FCDA28 url("../img/header_bg.svg") 50% 100%;
   padding-bottom: 2.16rem; }
   .header__bg {
     background: #111111;
